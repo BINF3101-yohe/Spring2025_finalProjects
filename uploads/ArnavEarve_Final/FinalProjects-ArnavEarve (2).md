@@ -161,7 +161,7 @@ Protein 2 was my outlier protein because it had a significantly better hydrophob
 ![Hydrophobicity Plot](hydrophobicity_plot.png)
 
 ### Genome Size Plot  
-The genome size of Apis mellifera virus 1 is 3033 bp. I compared this with 15 related viruses, two different viruses and the virus. Most genomes were around the same of 3000 bp, with the outgroup (MT138056) being smaller at 2015 bp. Also, compared to the Sar-CoV-2 virus, Apis mellifera is significantly smaller by almost 2,500 bp. The fact that most of the genomes were around the same number of base pairs shows how consistent these genomes are between viruses of the same family. Also, the genome size plot helped show how far from the rest of the group virus MT138056 was. The code I used to create this plot is down below. 
+The genome size of Apis mellifera virus 1 is 3033 bp. I compared this with 15 related viruses, two different viruses and the virus. Most genomes were around the same of 3000 bp, with the outgroup (MT138056) being smaller at 2015 bp. Also, compared to the Sar-CoV-2 virus, Apis mellifera is significantly smaller by almost 25,000 bp. The fact that most of the genomes were around the same number of base pairs shows how consistent these genomes are between viruses of the same family. Also, the genome size plot helped show how far from the rest of the group virus MT138056 was. The code I used to create this plot is down below. 
 
 ```python
 import matplotlib.pyplot as plt
