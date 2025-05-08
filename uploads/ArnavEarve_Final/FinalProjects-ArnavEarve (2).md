@@ -128,7 +128,7 @@ iqtree -s all_sequences_aligned.fasta -m TEST -bb 1000
 ## III. Results and Discussion
 
 ### Hydrophobicity Plot  
-I generated this plot against the E.coli proteome resulting in Protein 2 having the best hydrophobicity, while Protein 1 had the worst hydrophobicity. The importance of this created plot was to check the hydrophobicity for every viral protein, which can help us determine which proteins were used for processes like host cell entry through the endocytoic pathway.  The code I used to create this plot is down below.
+I generated this plot against the E.coli proteome resulting in the hydrophobicity for the E.coli being near 0 and -0.25. However, for the Apis mellifera virus we can see that it its hydrophobicity is lower than the average for E.coli. The offical average for E.coli was -0.08 comapared to -0.41 for Apis mellifera. There are 23 points plotted for the Apis virus comapred to the 2000 for E.coli. In simple this graph is just for comparsion between Apis mellifera virus and E.coli when speaking about hydrophobicity. The code I used to create this plot is down below.
 
 ```python
 from Bio import SeqIO
@@ -157,11 +157,11 @@ plt.show()
 
 
 ### BLAST of Outlier Protein  
-Protein 2 was my outlier protein because it had a significantly better hydrophobicity. Another reason I selected this protein is due to the fact that with a higher hydrophobicity it's more likely to be used in processes like replication and cell entry. I then blasted protein two and the sequence that was annotated was cited as being involved with entry mechanisms. I also blasted protein one because it has the lowest hydrophobicity just to compare the two and see the difference. By blasting the second protein we proved that idea of it being used for important process for the virus such as viral entry. By blasting the first protein we proved the idea that it isn't really useful when regarding on vital entry's or processes a virus may need. This is a very interesting fact because it is similar to other non-enveloped viruses during viral entry.
+Protein 2 was my outlier protein because it had a significantly better hydrophobicity. Another reason I selected this protein is due to the fact that with a higher hydrophobicity it's more likely to be used in processes like replication and cell entry. I then blasted protein two and the sequence that was annotated was cited as being involved with viral entry mechanisms. I also blasted protein one because it has the lowest hydrophobicity just to compare the two and see the difference. By blasting the second protein we proved that idea of it being used for important process for the virus such as viral entry. By blasting the first protein we proved the idea that it isn't really useful when regarding on vital entry's or processes a virus may need. 
 ![Hydrophobicity Plot](hydrophobicity_plot.png)
 
 ### Genome Size Plot  
-The genome size of Apis mellifera virus 1 is 3033 bp. I compared this with 15 related viruses, two different viruses and the  virus. Most genomes were around the same of 3000 bp, with the outgroup (MT138056) being smaller at 2015 bp. Also, compared to the Sar-CoV-2 virus, Apis mellifera is significantly smaller by almost 2,500 bp. The fact that most of the genomes were around the same number of base pairs shows how consistent these genomes are between viruses of the same family. Also, the genome size plot helped show how far from the rest of the group virus MT138056 was. The code I used to create this plot is down below. 
+The genome size of Apis mellifera virus 1 is 3033 bp. I compared this with 15 related viruses, two different viruses and the virus. Most genomes were around the same of 3000 bp, with the outgroup (MT138056) being smaller at 2015 bp. Also, compared to the Sar-CoV-2 virus, Apis mellifera is significantly smaller by almost 2,500 bp. The fact that most of the genomes were around the same number of base pairs shows how consistent these genomes are between viruses of the same family. Also, the genome size plot helped show how far from the rest of the group virus MT138056 was. The code I used to create this plot is down below. 
 
 ```python
 import matplotlib.pyplot as plt
@@ -197,7 +197,7 @@ plt.show()
 ![Genome Size Plot](genome_size_plot.png)
 
 ### Phylogeny and Model  
-Using FigTree, the tree was rooted to MT138056, with ordered nodes and increasing the tip label size. The closest relatives of MH973742 were MK059759, MK059755, and MK059758. The  best fit model used to infer this phylogeny was the Kimura 2-Parameter model because I was comparing the virus the other closely related viruses, what this model excels at. If I were to use more unqiue and different viruses I would of had to use a different model. Based on the results there is no evidence that the host switch had happened, which is why the virus does not have any angetic shifts. Across the graph we have high bootstrap values which suggest the branches are well supported by the values. The tree created was important because not only did I find the cloest relatives for the virus but, was able to compare all 18 viruses with each. 
+Using FigTree, the tree was rooted to MT138056, with ordered nodes and increasing the tip label size. The closest relatives of MH973742 were MK059759, MK059755, and MK059758. The  best fit model used to infer this phylogeny was the Kimura 2-Parameter model because I was comparing the virus the other closely related viruses, which is what excels at. If I were to use more unqiue and different viruses I would of had to use a different model. Based on the results there is no evidence that the host switch had happened, which is why the virus does not have any angetic shifts. Across the graph we have high bootstrap values which suggests the branches are well supported by these values. The tree created was important because not only did I find the cloest relatives for the virus but, was able to compare all 18 viruses with each other. 
 
 ![Phylogeny Tree](final%20fig%20tree.png)
 
